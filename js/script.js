@@ -6,7 +6,13 @@ btn_procurar.addEventListener("click", (e) => {
     let finalURL = `https://restcountries.com/v3.1/translation/${nome_do_pais}`;
     console.log(nome_do_pais);
     console.log(finalURL);
+
+    //Tradução
     fetch(finalURL).then((response) => response.json()).then((dados) => {
-        console.log(dados[0])
-    })
-})
+        console.log(dados[0].flags.alt);
+        let traducao = `https://api.mymemory.translated.net/get?q=${dados[0].flags.alt}!&langpair=en|pt`;
+        fetch(traducao).then((r) => r.json()).then((dado) => {
+            console.log(dado.responseData.translatedText);
+        })
+    });
+});
