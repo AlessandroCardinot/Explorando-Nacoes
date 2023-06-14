@@ -1,0 +1,8 @@
+/* Cabeçalho */
+.cabecalho {
+    color: #fff;
+    border-bottom: solid 0.2em #000;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: red;
+}

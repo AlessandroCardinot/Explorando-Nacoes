@@ -7,9 +7,10 @@ btn_procurar.addEventListener("click", (e) => {
     console.log(nome_do_pais);
     console.log(finalURL);
 
-    //Tradução
+    
     fetch(finalURL).then((response) => response.json()).then((dados) => {
-        console.log(dados[0].flags.alt);
+        console.log(dados[0]);
+        //Tradução
         let traducao = `https://api.mymemory.translated.net/get?q=${dados[0].flags.alt}!&langpair=en|pt`;
         fetch(traducao).then((r) => r.json()).then((dado) => {
             console.log(dado.responseData.translatedText);
