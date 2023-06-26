@@ -6,3 +6,22 @@
     padding-bottom: 2em;
     background-color: red;
 }
+/* Informações */
+.espaco {
+    margin-top: 5em;
+}
+.titulo {
+    font-size: 5em;
+    text-align: center;
+}
+.subtitulo {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#fundo {
+    padding-top: 5em;
+    padding-bottom: 50em;
+    background: linear-gradient(to right, #000,#252525, #464545, #797979,  #fff 28%,#fff 79%,#000);
+    
+}
