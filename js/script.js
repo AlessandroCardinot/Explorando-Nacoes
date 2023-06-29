@@ -3,6 +3,7 @@ let btn_procurar = document.getElementById("btn-pais");
 btn_procurar.addEventListener("click", (e) => {
     e.preventDefault();
 
+    let texto = document.getElementById("texto");
     let bandeira = document.getElementById("bandeira");
     let brasao = document.getElementById("brasao");
     
@@ -13,9 +14,7 @@ btn_procurar.addEventListener("click", (e) => {
     console.log(nome_do_pais);
     console.log(finalURL);
     
-   
 
-    
     fetch(finalURL).then((response) => response.json()).then((dados) => {
         console.log(dados[0]);
         console.log(dados[0].altSpellings[1]);
@@ -32,10 +31,13 @@ btn_procurar.addEventListener("click", (e) => {
 
         //Tradução
         for (c in info){
-            let traducao = `https://api.mymemory.translated.net/get?q=${info[c]}!&langpair=en|pt`;
+            
+            var traducao = `https://api.mymemory.translated.net/get?q=${info[c]}!&langpair=en|pt`;
             fetch(traducao).then((r) => r.json()).then((dado) => {
+                
                 info_traduzida[c] = dado.responseData.translatedText;
+                console.log(info_traduzida);
         })}
-        console.log(info_traduzida);
+        
     });
 });
