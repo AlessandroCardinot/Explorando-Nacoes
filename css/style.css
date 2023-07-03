@@ -5,8 +5,17 @@
     padding-top: 2em;
     padding-bottom: 2em;
     background-color: #6a6f92;
-    overflow-x: hidden;
 }
+#btn-pais {
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 0;
+    color: #000;
+}
+#btn-pais:hover {
+    background-color: #c5c5c5;
+}
+
 @media (min-width: 768px) {
     .btn {
         margin-left: 1em;
@@ -17,6 +26,12 @@ li .bi {
     font-size: 2em;
     color: #fff;
 }
+li .bi:hover {
+    color: #27273d;
+}
+.name {
+    font-family: 'Playfair Display', serif;
+}
 /* Informações */
 .espaco {
     margin-top: 5em;
@@ -24,10 +39,22 @@ li .bi {
 .titulo {
     font-size: 5em;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 .subtitulo {
     margin-top: 1em;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+body {
+    overflow-x: hidden;
+    
+    
+}
+#texto {
+    font-family: 'Lato', sans-serif;
 }
 @media (max-width: 811px) {
     img {
@@ -45,7 +72,6 @@ li .bi {
 }
 #fundo {
     padding-top: 5em;
-    padding-bottom: 50em;
+    padding-bottom: 5em;
     background: linear-gradient(to right, #27273d, #747baa,  #fff 30%,#fff 70%,#747baa, #27273d);
-    
 }
