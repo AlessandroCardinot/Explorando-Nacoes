@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto países</title>
+    <title>Explorando Nações</title>
     <link rel="shortcut icon" href="imagem.jpg" type="image/x-icon">
 
     <!-- CSS -->
@@ -15,75 +15,67 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
     <!-- Cabeçalho -->
-    
-                    <div class="cabecalho">
-                        <nav class="navbar navbar-expand-lg row">
-                            <div class="container-fluid">
-                                <div class="col-3 offset-1 col-md-3 offset-md-1"><h1 class=""><i class="bi bi-globe-americas"></i> Projeto Final</h1></div>
-                                <div class="col-5 col-md-3"><input type="text" id="pais-requisitado" placeholder="Digite o nome do país" class="form-control"></div>
-                                <div class="col-1 col-md-1"><button type="submit" id="btn-pais" class="btn btn-dark"><i class="bi bi-search"></i></button></div>
-                              <div class="col-1 col-md-1">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="bi bi-list"></span>
-                                </button>
-                              </div>
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                  <li class="nav-item">
-                                    <a href="#"><i class="bi bi-github"></i></a>
-                                    <a href="mailto:renataalessandrorc@gmail.com"><i class="bi bi-envelope-at"></i></a>
-                                    <a href="#"><i class="bi bi-instagram"></i></a>
-                                    <a href="#"><i class="bi bi-lightbulb-fill"></i></a>
-                                  </li>
-                                  <li class="nav-item">
-                                    
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a href="#">
-                                        
-                                    </a>
-                                    <li class="nav-item">
-                                        
-                                      </li>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </nav>
-                    </div>
-
-                    <!--<a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-controller"></i></a>
-                    <a href="mailto:renataalessandrorc@gmail.com"><i class="bi bi-envelope-at"></i></a>-->
+    <div class="cabecalho">
+      <nav class="navbar navbar-expand-lg row">
+        <div class="container-fluid">
+            <div class="col-3 offset-1 col-md-3 offset-md-1"><h1 class="name"><i class="bi bi-globe-americas"></i>  Explorando Nações</h1></div>
+            <div class="col-5 col-md-3"><input type="text" id="pais-requisitado" placeholder="Digite o nome do país" class="form-control"></div>
+            <div class="col-1 col-md-1"><button type="submit" id="btn-pais" class="btn btn-dark"><i class="bi bi-search"></i></button></div>
+          <div class="col-1 col-md-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Ìcons -->
+              <li class="nav-item">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="mailto:renataalessandrorc@gmail.com"><i class="bi bi-envelope-at"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="http://www.ideasnf.org.br/" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- Informações -->
     <div id="fundo">
-        <div class="row espaco">
-            <div class="col-3 offset-1 col-md-3 offset-md-1"><img width="250px" id="bandeira" src="https://flagcdn.com/w320/br.png" alt="Bandeira do país"></div>
-            <div class="col-4 col-md-4"><h1 class="titulo" id="titulo">Brasil</h1><h3 class="subtitulo"><u>República Ferativa do Brasil</u></h3></div>
-            <div class=" col-2 col-md-2 offset-md-2"><img width="230px" id="brasao" src="https://mainfacts.com/media/images/coats_of_arms/br.svg" alt="Brasão"></div>
-        </div>
-        <div class="row">
-            <div class="col-10 offset-1 col-md-6 offset-md-3"><h2 id="texto">O país, oficialmente denominado (Nome completo do país), é uma nação diversificada, com uma população de milhões de habitantes que contribuem para a rica tapeçaria cultural do país. Sua vasta área territorial abrange aproximadamente milhares de quilômetros quadrados, oferecendo paisagens variadas e recursos naturais abundantes.<br><br>
+      <div class="row espaco">
+          <div class="col-3 offset-1 col-md-3 offset-md-1"><img width="250px" id="bandeira" src="https://flagcdn.com/w320/br.png" alt="Bandeira do país"></div> <!-- Imagem da Bandeira -->
+          <div class="col-4 col-md-4"><h1 class="titulo">Brasil</h1><h3 class="subtitulo"><u class="nome_completo">República Ferativa do Brasil</u></h3></div>
+          <div class=" col-2 col-md-2 offset-md-2"><img width="230px" id="brasao" src="https://mainfacts.com/media/images/coats_of_arms/br.svg" alt="Brasão"></div><!-- Imagem do Brasão -->
+      </div>
+      <div class="row">
+          <div class="col-10 offset-1 col-md-6 offset-md-3"><h2 id="texto">O país, oficialmente denominado (Nome completo do país), é uma nação diversificada, com uma população de (população) de habitantes. Sua área territorial abrange aproximadamente (Tamanho) de quilômetros quadrados, oferecendo paisagens variadas e recursos naturais abundantes.<br><br>
 
-                A moeda oficial, o (Nome da moeda), é amplamente aceita em todo o país, facilitando transações comerciais e turismo. Localizado no continente (Nome do continente), o país faz fronteira com várias nações vizinhas e desfruta de relações diplomáticas em âmbito internacional. <br><br>
-                
-                A capital do país, (Nome da capital), é o epicentro político, econômico e cultural, abrigando importantes instituições governamentais, centros de negócios e atrações culturais que atraem visitantes de todo o mundo. O idioma oficial, (Nome da língua), é amplamente falado e reflete a rica herança linguística e cultural do país. <br><br>
+              A moeda oficial, o (Nome da moeda), é amplamente aceita em todo o país, facilitando transações comerciais e turismo. Localizado no continente (Nome do continente), o país faz fronteira com várias nações vizinhas e desfruta de relações diplomáticas em âmbito internacional. <br><br>
+              
+              A capital do país, (Nome da capital), é o epicentro político, econômico e cultural, abrigando importantes instituições governamentais, centros de negócios e atrações culturais que atraem visitantes de todo o mundo. O idioma oficial, (Nome da língua), é amplamente falado e reflete a rica herança linguística e cultural do país. <br><br>
 
-                Além disso, o país é caracterizado por seu índice Gini, um indicador que mede a desigualdade de renda em uma nação. O índice Gini do país reflete sua distribuição de renda, mostrando a disparidade econômica dentro da sociedade. <br><br>
-                
-                Com uma sociedade diversa e dinâmica, o país orgulha-se de sua riqueza cultural, gastronomia única, patrimônio histórico e belezas naturais deslumbrantes. Seus habitantes são conhecidos pela hospitalidade calorosa e acolhedora, tornando-o um destino popular para turistas e viajantes em busca de experiências enriquecedoras.</h2></div>
-        </div>
+              Além disso, o país é caracterizado por seu índice Gini, um indicador que mede a desigualdade de renda em uma nação. O índice Gini do país, que vale (Gini), reflete sua distribuição de renda, mostrando a disparidade econômica dentro da sociedade. <br><br>
+              
+              Com uma sociedade diversa e dinâmica, o país orgulha-se de sua riqueza cultural, gastronomia única, patrimônio histórico e belezas naturais deslumbrantes.</h2></div>
+      </div>
     </div>
-
-    <footer>
-
-    </footer>
 
     <!-- JS -->
     <script src="js/script.js"></script>
