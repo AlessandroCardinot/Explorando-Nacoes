@@ -1,7 +1,6 @@
 let btn_procurar = document.getElementById("btn-pais");
 
 
-
 btn_procurar.addEventListener("click", async (e) => {
     e.preventDefault();
 
@@ -73,6 +72,7 @@ btn_procurar.addEventListener("click", async (e) => {
                 });
 
                 document.querySelector(".titulo").innerHTML = info_traduzida.nome;
+                document.querySelector(".nome_completo").innerHTML = info_traduzida.nome_completo;
 
                 texto.innerHTML = `O país, oficialmente denominado ${info_traduzida.nome_completo}, é uma nação diversificada, com uma população de ${dados[0].population} de habitantes. Sua área territorial abrange aproximadamente ${dados[0].area} de quilômetros quadrados, oferecendo paisagens variadas e recursos naturais abundantes.<br><br>
 
