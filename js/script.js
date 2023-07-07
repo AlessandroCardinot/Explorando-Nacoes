@@ -91,3 +91,7 @@ btn_procurar.addEventListener("click", async (e) => {
     });
     
 });
+/*document.addEventListener("keydown", (e) => {
+    
+    e.preventDefault();
+});*/
