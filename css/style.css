@@ -81,8 +81,19 @@ body {
     padding-bottom: 5em;
     background: linear-gradient(to right, #27273d, #747baa,  #fff 30%,#fff 70%,#747baa, #27273d);
 }
+/* Rodapé */
 .rodape {
     background-color: #6a6f92;
     text-align: center;
     padding-bottom: 1em;
+    color: #fff;
+}
+.rodape a {
+    margin-left: 1em;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+.rodape a:hover {
+    color: #27273d;
 }
