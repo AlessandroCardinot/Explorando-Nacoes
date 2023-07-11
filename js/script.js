@@ -1,21 +1,17 @@
 let btn_procurar = document.getElementById("btn-pais");
 
-var c = 0;
-
     async function api(){
         let texto = document.getElementById("texto");
         let bandeira = document.getElementById("bandeira");
         let brasao = document.getElementById("brasao");
         
-
+        //Pesquisa das informações do país
         let finalURL = `https://restcountries.com/v3.1/translation/${nome_do_pais}`;
         console.log(nome_do_pais);
         console.log(finalURL);
         
 
         await fetch(finalURL).then((response) => response.json()).then((dados) => {
-            console.log(dados[0]);
-            console.log(dados[0].altSpellings[1]);
             var info = {
                 moeda: Object.values(dados[0].currencies)[0].name,
                 continente: dados[0].subregion,
@@ -88,15 +84,16 @@ var c = 0;
         });
         };
 
+// Tela inicial
+
+var c = 0;
+
 if (c == 0) {
     c += 1;
-
     nome_do_pais = "Brasil"
-
-
-        api();
+    api();
 }
-
+// Após o click do botão
 btn_procurar.addEventListener("click", async (e) => {
     e.preventDefault();
 
@@ -104,12 +101,12 @@ btn_procurar.addEventListener("click", async (e) => {
 
     api();
 });
+// Após pressionar a tecla Enter
 document.addEventListener("keyup", async (e) => {
     e.preventDefault();
 
     if (e.key === "Enter") {
         nome_do_pais = document.getElementById("pais-requisitado").value;
-        
         api();
     }
 });
