@@ -78,8 +78,6 @@ var c = 0;
                     A moeda oficial, ${info_traduzida.moeda}, é amplamente aceita em todo o país, facilitando transações comerciais e turismo. Localizado no continente ${info_traduzida.continente}, o país faz fronteira com várias nações vizinhas e desfruta de relações diplomáticas em âmbito internacional. <br><br>
                         
                     A capital do país, ${dados[0].capital[0]}, é o epicentro político, econômico e cultural, abrigando importantes instituições governamentais, centros de negócios e atrações culturais que atraem visitantes de todo o mundo. O idioma oficial, ${info_traduzida.idioma}, é amplamente falado e reflete a rica herança linguística e cultural do país. <br><br>
-
-                    Além disso, o país é caracterizado por seu índice Gini, um indicador que mede a desigualdade de renda em uma nação. O índice Gini do país, que vale ${Object.values(dados[0].gini)[0]}, reflete sua distribuição de renda, mostrando a disparidade econômica dentro da sociedade. <br><br>
                         
                     Com uma sociedade diversa e dinâmica, o país orgulha-se de sua riqueza cultural, gastronomia única, patrimônio histórico e belezas naturais deslumbrantes.`;
 
@@ -108,7 +106,7 @@ btn_procurar.addEventListener("click", async (e) => {
 });
 document.addEventListener("keyup", async (e) => {
     e.preventDefault();
-    
+
     if (e.key === "Enter") {
         nome_do_pais = document.getElementById("pais-requisitado").value;
         
