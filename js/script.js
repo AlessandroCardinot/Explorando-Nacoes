@@ -12,6 +12,8 @@ let btn_procurar = document.getElementById("btn-pais");
         
 
         await fetch(finalURL).then((response) => response.json()).then((dados) => {
+            console.log(dados[0])
+
             var info = {
                 moeda: Object.values(dados[0].currencies)[0].name,
                 continente: dados[0].subregion,
